@@ -39,7 +39,7 @@ class NoteApp(QWidget):
         layout = QVBoxLayout()
         #font
         font_id = QFontDatabase.addApplicationFont(
-            "/Users/nguyenphidieu/Downloads/VCR_OSD_MONO_1.001.ttf"
+            "/Users/DIHADMIN/Downloads/VCR_OSD_MONO_1.001.ttf"
 )
         #font setting
         families = QFontDatabase.applicationFontFamilies(font_id)
