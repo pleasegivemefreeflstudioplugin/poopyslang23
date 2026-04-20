@@ -62,9 +62,9 @@ class NoteApp(QWidget):
         self.settings = QSettings("MyApp", "Notes")
         self.always_include_time = self.settings.value("always_time", False, type=bool)
 
-        # --- FONT (KEPT) ---
+        # --- FONT ---
         font_id = QFontDatabase.addApplicationFont(
-            "/Users/nguyenphidieu/Downloads/VCR_OSD_MONO_1.001.ttf"
+            "/Users/DIHADMIN/Downloads/VCR_OSD_MONO_1.001.ttf"
         )
         families = QFontDatabase.applicationFontFamilies(font_id)
         self.family = families[0] if (font_id != -1 and families) else "Arial"
@@ -87,7 +87,7 @@ class NoteApp(QWidget):
         self.button.clicked.connect(self.save_note)
         self.settings_btn.clicked.connect(self.open_settings)
 
-        # --- STYLE (FIXED CSS) ---
+        # --- STYLE ---
         self.setStyleSheet("""
             QWidget {
                 background-color: rgb(0,0,0);
@@ -126,7 +126,7 @@ class NoteApp(QWidget):
         if dialog.exec_():
             self.always_include_time = dialog.checkbox_time.isChecked()
 
-            # SAVE TO DISK (this is what you were missing)
+            # SAVE DATA 
             self.settings.setValue("always_time", self.always_include_time)
 
     # --- SAVE NOTE ---
