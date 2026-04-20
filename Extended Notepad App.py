@@ -1,3 +1,24 @@
+#FONT Files are on my computer , PLEASE CHANGE LOCATION OF FONT FILE 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPlainTextEdit,
     QPushButton, QListWidget, QMessageBox, QCheckBox, QDialog
